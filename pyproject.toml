@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "matomocamp-bot"
+version = "0.1.0"
+description = ""
+authors = ["Lukas Winkler <git@lw1.at>"]
+readme = "README.md"
+packages = [{include = "matomocamp_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+matrix-nio = {extras = ["e2e"], version = "^0.22.1"}
+pytz = "^2023.3.post1"
+dateutils = "^0.6.12"
+libsass = "^0.21.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
